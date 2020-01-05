@@ -6,20 +6,20 @@ import "semantic-ui-css/semantic.css";
 
 Amplify.configure({
   Auth: {
-    identityPoolId: "us-east-1:516132f0-8056-4450-a1d5-fd4e6f877845",
+    identityPoolId: "us-east-1:0041e3b9-41de-4276-9bfb-fa9752ebfc8a",
     region: "us-east-1",
-    userPoolId: "us-east-1_QZ3Aa0LBe",
-    userPoolWebClientId: "5s6jmc25o0vm3vui34r9vh580j"
+    userPoolId: "us-east-1_2Oumgyn77",
+    userPoolWebClientId: "2peqvnvvg3j6il0gf6i7vor6pl"
   },
-  aws_appsync_graphqlEndpoint: "https://graphql.dlozitskiy.online",
+  aws_appsync_graphqlEndpoint: "https://ezf6fxzimjgjncykh7kyi73toy.appsync-api.us-east-1.amazonaws.com/graphql",
   aws_appsync_region: "us-east-1",
   aws_appsync_authenticationType: "AMAZON_COGNITO_USER_POOLS"
 });
 
 Storage.configure({
-  bucket: "bucket-with-protected-content",
+  bucket: "shlomitest1",
   region: "us-east-1",
-  identityPoolId: "us-east-1:516132f0-8056-4450-a1d5-fd4e6f877845"
+  identityPoolId: "us-east-1:0041e3b9-41de-4276-9bfb-fa9752ebfc8a"
 });
 
 const putObject = `mutation putObject($objectId: String!){
